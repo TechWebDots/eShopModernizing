@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  eshoplegacywebforms:
+    image: ${DOCKER_REGISTRY-}eshoplegacywebforms
+    build:
+      context: .\src\eShopLegacyWebForms
+      dockerfile: Dockerfile
